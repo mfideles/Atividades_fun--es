@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe3</title>
+</head>
+<body>
+    <script>
+        /* Crie uma função que recebe por parâmetro um valor inteiro e positivo e retorne verdadeiro se o número for primo ou falso se não for. */
+
+        function isPrime(value)
+        {
+            if(value > 0)
+            {
+                for (let divisor = 2; divisor < value; divisor++)
+                {
+                if(value % divisor === 0)
+                {
+                return document.write('é primo');
+                }
+                else
+                {
+                return document.write('não é primo');
+                }
+             }
+            }
+        }
+
+        isPrime(parseInt(prompt('Digite um valor: ')));
+    </script>
+</body>
+</html>

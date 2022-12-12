@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe5</title>
+</head>
+<body>
+    <script>
+        /*Crie uma função que recebe um valor inteiro e retorne verdadeiro se é um valor perfeito ou falso se não for. Um valor é dito perfeito
+        quando ele é igual a soma dos seus divisores excetuando ele próprio. */
+
+        function perfeito(value) 
+        {
+            let soma = 0;
+            let metade = value / 2;
+
+            for (let i = 1; i <= metade; i++) 
+            {
+                if (value % i == 0) 
+                {
+                soma = soma + i
+                }
+            }
+                if(soma == value)   
+                {
+                document.write('valor perfeito!');
+                }
+                else
+                {
+                    document.write('valor imperfeito!');
+                }
+        }
+
+perfeito(parseInt(prompt('informe um valor:')));
+    </script>
+</body>
+</html>
